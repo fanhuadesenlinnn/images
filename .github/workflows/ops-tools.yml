@@ -36,7 +36,7 @@ jobs:
           # DOCKERHUB_USERNAME 是 docker hub 账号名.
           # DOCKERHUB_TOKEN: docker hub => Account Setting => Security 创建.
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: ${{ secrets.DOCKERHUB_USERPASSWD }}
           
       # 通过 git 命令获取当前 tag 信息, 存入环境变量 APP_VERSION
       - name: Generate App Version
