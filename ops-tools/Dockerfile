@@ -2,6 +2,7 @@ FROM ubuntu:22.04
 
 ENV test=test
 
+WORKDIR /tem
 
 RUN apt-get update   \
     && apt-get install -y curl wget \
@@ -12,7 +13,7 @@ RUN apt-get update   \
                           git fping  \
     && wget https://dl.min.io/client/mc/release/linux-amd64/mc  \
     && chmod +x mc     \
-    && mv mv /bin/   \
+    && mv mc /bin/   \
     && rm -rf /var/lib/apt/lists/* 
 
 
