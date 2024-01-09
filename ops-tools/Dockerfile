@@ -10,7 +10,7 @@ RUN apt-get update   \
     && apt-get update  \
     && apt-get install -y bendsql mysql-client \
                           git fping  \
-    $$ wget https://dl.min.io/client/mc/release/linux-amd64/mc  \
+    && wget https://dl.min.io/client/mc/release/linux-amd64/mc  \
     && chmod +x mc     \
     && mv mv /bin/   \
     && rm -rf /var/lib/apt/lists/* 
