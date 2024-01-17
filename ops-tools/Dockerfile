@@ -9,7 +9,7 @@ RUN apt-get update   \
     # bendsql
     && curl -L -o /etc/apt/sources.list.d/datafuselabs.sources https://repo.databend.rs/deb/datafuselabs.sources \
     && apt-get update  \
-    && apt-get install -y bendsql mysql-client \
+    && apt-get install -y bendsql mysql-client postgresql\
                           git fping iputils-ping vim \
     && wget https://dl.min.io/client/mc/release/linux-amd64/mc  \
     && chmod +x mc     \
