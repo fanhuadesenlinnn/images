@@ -34,8 +34,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: ops-tools  # 设置构建上下文为当前目录
-          file: ops-tools/Dockerfile
+          context: dufs  # 设置构建上下文为当前目录
+          file: dufs/Dockerfile
           push: true
           platforms: |
             linux/amd64
